@@ -1,4 +1,4 @@
-### Prasunet Machine Learning Internship Projects Overview
+# Prasunet Machine Learning Internship Projects Overview
 
 These projects were developed as part of the Prasunet Company Machine Learning Internship program. 
 During the internship, I had the opportunity to work on several exciting machine learning tasks, enhancing my skills in Artificial Intelligence, Machine Learning, Deep learning and web-based deployment of AI models.
