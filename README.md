@@ -8,7 +8,7 @@ Below are brief descriptions of the two main tasks I worked on:
 ## Project 1: Prasunet_ML_01
 Implement a linear regression model to predict the prices of houses based on their square footage and the number of bedrooms and bathrooms.
 
-Detailed Project Information: [Prasunet_ML_01/Readme.md]
+Detailed Project Information: [Prasunet_ML_01](./Prasunet_ML_01/README.md)
 
 ## Project 2: Prasunet_ML_05
 Develop a model that can accurately recognize food items from images and estimate their calorie content, enabling users to track their dietary intake and make informed food choices.
