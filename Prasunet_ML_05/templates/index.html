@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Calorie Estimator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Food Calorie Estimator</h1>
+
+        <form action="/predict" method="post" id="imageForm">
+            <label for="fileInput">Upload Image of Food</label>
+            <input type="file" id="fileInput" accept="image/*" onchange="previewImage(event)">
+
+            <div class="image-preview">
+                <img id="foodImage" src="#" alt="Food Image Preview" style="display: none;">
+            </div>
+
+            <p>Supported food items are: 'apple_pie', 'bread_pudding', 'breakfast_burrito', 'caesar_salad', 'cannoli', 'caprese_salad', 'carrot_cake', 'cheese_plate', 'cheesecake', 'donuts'</p>
+            <button type="submit">Estimate Calories</button>
+        </form>
+
+        <div id="result">
+            <!-- Processed text will appear here -->
+        </div>
+    </div>
+
+    <script>
+        function previewImage(event) {
+            const reader = new FileReader();
+            const foodImage = document.getElementById('foodImage');
+            reader.onload = function(){
+                if (reader.readyState == 2) {
+                    foodImage.src = reader.result;
+                    foodImage.style.display = 'block';
+                }
+            }
+            reader.readAsDataURL(event.target.files[0]);
+        }
+
+    </script>
+</body>
+</html>
